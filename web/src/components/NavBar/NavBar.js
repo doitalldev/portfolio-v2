@@ -29,12 +29,6 @@ const NavBar = () => {
           <Link to={routes.about()} className="nav-button">
             Blog
           </Link>
-          <Link
-            to={routes.contact()}
-            className="bg-sky-600 rounded text-xl text-center px-4 py-2 hover:bg-sky-700 text-white"
-          >
-            Hire Me
-          </Link>
         </div>
       </nav>
     </div>

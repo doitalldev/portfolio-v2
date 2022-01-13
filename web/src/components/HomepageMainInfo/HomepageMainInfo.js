@@ -1,3 +1,5 @@
+import { Link, routes } from '@redwoodjs/router'
+
 const HomepageMainInfo = () => {
   return (
     <div className="absolute w-1/2 top-1/3 pl-12">
@@ -17,6 +19,14 @@ const HomepageMainInfo = () => {
           My name is Jonathan{' '}
           <span className=" text-sky-600">(refactor_this)</span> Clark
         </p>
+        <div className="mt-12">
+          <Link
+            to={routes.contact()}
+            className="bg-sky-600 rounded text-xl text-center px-6 py-4  text-white shadow-xl hover:bg-white hover:text-black transition ease-in-out"
+          >
+            Hire Me
+          </Link>
+        </div>
       </div>
     </div>
   )
