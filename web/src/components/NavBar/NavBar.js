@@ -26,7 +26,7 @@ const NavBar = () => {
           <Link to={routes.home()} className="nav-button">
             Home
           </Link>
-          <Link to={routes.about()} className="nav-button">
+          <Link to={routes.home()} className="nav-button">
             Blog
           </Link>
         </div>

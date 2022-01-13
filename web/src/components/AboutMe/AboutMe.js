@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="p-8 my-10 rounded-2xl shadow-lg bg-white max-w-xl text-lg">
+    <div className="p-12 my-10 rounded-2xl shadow-lg bg-white max-w-xl text-lg">
       <h2 className="text-4xl font-bold">About Me 👋</h2>
       <p className="my-2">
         I cannot stand questions like "tell me a time when..." These questions

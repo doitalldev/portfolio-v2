@@ -1,6 +1,13 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Link, navigate, routes } from '@redwoodjs/router'
 
 const HomepageMainInfo = () => {
+  const navigateContact = () => {
+    navigate(routes.contact())
+  }
+
+  const downloadResume = () => {
+    window.location = 'documents/J-Clark-Web-Version.pdf'
+  }
   return (
     <div className="absolute w-1/2 top-1/3 pl-12">
       <div className="flex flex-col">
@@ -8,7 +15,7 @@ const HomepageMainInfo = () => {
           <img
             src="mepixel.svg"
             alt="creature"
-            className="h-48 w-48 rounded-full p-4 border-4 border-sky-600"
+            className="h-48 w-48 rounded-full p-4 "
           />
         </div>
         <h2 className="text-5xl font-bold">
@@ -20,12 +27,18 @@ const HomepageMainInfo = () => {
           <span className=" text-sky-600">(refactor_this)</span> Clark
         </p>
         <div className="mt-12">
-          <Link
-            to={routes.contact()}
-            className="bg-sky-600 rounded text-xl text-center px-6 py-4  text-white shadow-xl hover:bg-white hover:text-black transition ease-in-out"
+          {/* <button
+            onClick={() => navigateContact()}
+            className="bg-sky-600 rounded text-xl text-center px-6 py-4  text-white shadow-xl hover:bg-white hover:text-black transition ease-in-out hover:-translate-y-2"
           >
             Hire Me
-          </Link>
+          </button> */}
+          <button
+            onClick={() => downloadResume()}
+            className="bg-sky-600 rounded text-xl text-center mx-4 px-6 py-4  text-white shadow-xl hover:bg-white hover:text-black transition ease-in-out hover:-translate-y-2"
+          >
+            Download Resume
+          </button>
         </div>
       </div>
     </div>

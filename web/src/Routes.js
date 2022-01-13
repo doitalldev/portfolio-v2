@@ -13,8 +13,6 @@ import MainLayout from './layouts/MainLayout/MainLayout'
 const Routes = () => {
   return (
     <Router>
-      <Route path="/contact" page={ContactPage} name="contact" />
-      <Route path="/about" page={AboutPage} name="about" />
       <Set wrap={MainLayout} prerender>
         <Route path="/" page={HomePage} name="home" />
       </Set>
