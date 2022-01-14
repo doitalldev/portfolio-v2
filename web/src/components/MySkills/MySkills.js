@@ -98,6 +98,13 @@ const MySkills = () => {
           </div>
         </div>
       </div>
+      <hr></hr>
+      <div className="my-4">
+        <h4>Tertiary Skills</h4>
+        <div className="flex w-full flex-wrap items-center justify-center">
+          I enjoy learning new things.
+        </div>
+      </div>
     </div>
   )
 }
